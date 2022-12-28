@@ -135,17 +135,6 @@ _Image Caption_
 
 In order to prevent the page content layout from shifting when the image is loaded, we should set the width and height for each image:
 
-```markdown
-![Desktop View](/assets/img/sample/mockup.png){: width="700" height="400" }
-```
-{: .nolineno}
-
-Starting from _Chirpy v5.0.0_, `height` and `width` support abbreviations (`height` → `h`, `width` → `w`). The following example has the same effect as the above:
-
-```markdown
-![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
-```
-{: .nolineno}
 
 ### Position
 
@@ -158,33 +147,17 @@ By default, the image is centered, but you can specify the position by using one
 
   Image will be left aligned in below sample:
 
-  ```markdown
-  ![Desktop View](/assets/img/sample/mockup.png){: .normal }
-  ```
-  {: .nolineno}
 
 - **Float to the left**
 
-  ```markdown
-  ![Desktop View](/assets/img/sample/mockup.png){: .left }
-  ```
-  {: .nolineno}
 
 - **Float to the right**
 
-  ```markdown
-  ![Desktop View](/assets/img/sample/mockup.png){: .right }
-  ```
-  {: .nolineno}
 
 ### Shadow
 
 The screenshots of the program window can be considered to show the shadow effect, and the shadow will be visible in the `light` mode:
 
-```markdown
-![Desktop View](/assets/img/sample/mockup.png){: .shadow }
-```
-{: .nolineno}
 
 ### CDN URL
 
@@ -199,10 +172,6 @@ Once `img_cdn` is assigned, the CDN URL will be added to the path of all images 
 
 For instance, when using images:
 
-```markdown
-![The flower](/path/to/flower.png)
-```
-{: .nolineno}
 
 The parsing result will automatically add the CDN prefix `https://cdn.com` before the image path:
 
@@ -224,10 +193,6 @@ img_path: /img/path/
 
 And then, the image source of Markdown can write the file name directly:
 
-```md
-![The flower](flower.png)
-```
-{: .nolineno }
 
 The output will be:
 
